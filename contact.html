@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Toptech - IT-Solution HTML5 Template</title>
+    <title>Hybritech - IT-Solution</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Favicon -->
@@ -104,53 +104,21 @@
       type="text/css"
       media="all"
     />
+    <!-- odometer CSS -->
     <!-- modernizr js -->
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
   </head>
 
   <body>
     <!-- loder -->
+    <!-- <div class="loader-wrapper">
+      <span class="loader"></span>
+      <div class="loder-section left-section"></div>
+      <div class="loder-section right-section"></div>
+    </div> -->
 
-    <div class="top-header-area">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="header-info">
-              <ul>
-                <li>
-                  <i class="bi bi-geo-alt-fill"></i>New market Sandigo -
-                  California
-                </li>
-                <li><i class="bi bi-envelope"></i>example@example.com</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="top-header-social-icon">
-              <ul>
-                <li class="time-line">
-                  <i class="bi bi-alarm"></i>9.10 am - 5.30 pm
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!--==================================================-->
-    <!-- Start Toptech Header Area Inner Style-->
+    <!-- Start Hybritech Header Area Style One-->
     <!--==================================================-->
     <div class="header-area inner-style" id="sticky-header">
       <div class="container">
@@ -188,7 +156,7 @@
       </div>
     </div>
     <!--==================================================-->
-    <!-- End Toptech Header Area Inner Style-->
+    <!-- End Hybritech Header Area Style One-->
     <!--==================================================-->
 
     <!--==================================================-->
@@ -196,6 +164,19 @@
     <!--==================================================-->
     <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
       <div class="mobile-menu">
+        <input
+          hidden=""
+          class="check-icon"
+          id="check-icon"
+          name="check-icon"
+          type="checkbox"
+        />
+        <label class="icon-menu" for="check-icon">
+          <div class="bar bar--1"></div>
+          <div class="bar bar--2"></div>
+          <div class="bar bar--3"></div>
+        </label>
+
         <nav class="header-menu">
           <ul class="nav_scroll">
             <li class="menu-item-has-children">
@@ -222,58 +203,44 @@
     <!--==================================================-->
 
     <!--==================================================-->
-    <!-- Start Toptech Breadcumb Area -->
-    <!--==================================================-->
-    <div class="breadcumb-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="breadcumb-content">
-              <h4>Contact Us</h4>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>></li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--==================================================-->
-    <!-- End Toptech Breadcumb Area -->
+    <!-- start Hybritech Have a Project Idea-->
     <!--==================================================-->
 
-    <!--==================================================-->
-    <!-- Start Toptech Contact Style Three-->
-    <!--==================================================-->
-    <div class="contact-area style-three inner">
+    <div class="develop style-three p-3 pt-5 pb-5 contact">
       <div class="container">
-        <div class="row add-white-bg align-items-center">
-          <div class="col-lg-8 col-md-12">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center align-items-center">
+            <div class="center style-two">
+              <h1 style="padding: 20px">Have a Project Idea?</h1>
+              <h1></h1>
+              <h4>
+                Highly Personalize new business connection, expertly curated to
+                meet your objectives and drive your business forward
+              </h4>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
             <div class="single-contact-box">
-              <div class="contact-contetn">
-                <h4>Write to Us Anytime</h4>
-              </div>
+              <div class="contact-contetn"></div>
               <form action="#">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-lg-12">
                     <div class="single-input-box">
                       <input
                         type="text"
                         name="name"
-                        placeholder="Your Name"
-                        required
+                        placeholder="Full Name"
+                        required=""
                       />
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="single-input-box">
                       <input
-                        type="text"
+                        type="number"
                         name="Email"
-                        placeholder="Enter E-Mail"
-                        required
+                        placeholder="Contact number *"
+                        required=""
                       />
                     </div>
                   </div>
@@ -282,138 +249,103 @@
                       <input
                         type="text"
                         name="Phone"
-                        placeholder="Phone Number"
-                        required
+                        placeholder="Email *"
+                        required=""
                       />
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-12">
                     <div class="single-input-box">
-                      <select name="place" id="place">
-                        <option value="saab">Subject</option>
-                        <option value="opel">Web Development</option>
-                        <option value="audi">Design</option>
-                        <option value="audi">Marketing</option>
-                      </select>
+                      <input
+                        type="text"
+                        name="Phone"
+                        placeholder="Subject"
+                        required=""
+                      />
                     </div>
                   </div>
+
                   <div class="col-lg-12">
                     <div class="single-input-box">
                       <textarea
                         name="massage"
                         id="massage"
-                        placeholder="Write Massage"
-                        required
+                        placeholder="Details *"
+                        required=""
                       ></textarea>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="massage-sent-button">
-                      <button type="submit">Send Massage</button>
+                      <button type="submit" class="submit">Send Massage</button>
                     </div>
                   </div>
                 </div>
               </form>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="single-contact-info-box">
-              <div class="info-content">
-                <h4>Don’t Forget to Contact Us</h4>
-              </div>
-              <div class="contact-info-box">
-                <div class="contact-info-icon">
-                  <i class="bi bi-telephone-fill"></i>
-                </div>
-                <div class="contact-info-content">
-                  <p>Call Us</p>
-                  <h4>+980 123 (4567) 890</h4>
-                </div>
-              </div>
-              <div class="contact-info-box">
-                <div class="contact-info-icon">
-                  <i class="bi bi-envelope-open-fill"></i>
-                </div>
-                <div class="contact-info-content">
-                  <p>Send E-Mail</p>
-                  <h4>example@gmail.com</h4>
-                </div>
-              </div>
-              <div class="contact-info-box">
-                <div class="contact-info-icon">
-                  <i class="bi bi-alarm"></i>
-                </div>
-                <div class="contact-info-content">
-                  <p>Office Hours</p>
-                  <h4>8.00 AM to 5.00 PM</h4>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
     <!--==================================================-->
-    <!-- End Toptech Contact Area Style Three-->
+    <!-- end Hybritech Have a Project Idea-->
     <!--==================================================-->
 
     <!--==================================================-->
-    <!-- Start Toptech Google map Area Style Two-->
+    <!-- Start Hybritech Frequently asked questions-->
     <!--==================================================-->
-    <div class="google-map">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.325396876019!2d90.36098897592879!3d23.80702538659894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c105f81691d5%3A0x4aa9bd97de918f7b!2sSher-E-Bangla%20National%20Cricket%20Stadium!5e0!3m2!1sen!2sbd!4v1715077171980!5m2!1sen!2sbd"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--==================================================-->
-    <!-- End Toptech Google map Area Style Two-->
-    <!--==================================================-->
-
-    <!--==================================================-->
-    <!-- Start Toptech Brand Area Style Two-->
-    <!--==================================================-->
-    <div class="brand-area style-two">
+    <div class="pricing-area style-two">
       <div class="container">
-        <div class="row">
-          <div class="brand-list-1 owl-carousel">
-            <div class="col-lg-12">
-              <div class="single-brand-box">
-                <div class="brand-thumb">
-                  <img src="assets/images/home-2/brand-1.png" alt="" />
+        <div class="row align-items-center">
+          <div class="col-lg">
+            <div class="section-title left style-two">
+              <h1>Frequently asked questions</h1>
+            </div>
+            <div class="faqs-container">
+              <div class="faq-singular">
+                <h2 class="faq-question">
+                  How to increase products sales 2024?
+                </h2>
+                <div class="faq-answer">
+                  <div class="desc">
+                    Credibly conceptualize multifunctional human capital after
+                    that awesome revenue superior scenarios. Collaboratively
+                    myocardinate flexible social marketing working technologies
+                    and robust services available
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="single-brand-box">
-                <div class="brand-thumb">
-                  <img src="assets/images/home-2/brand-2.png" alt="" />
+              <div class="faq-singular">
+                <h2 class="faq-question">What kinds of web traffics?</h2>
+                <div class="faq-answer">
+                  <div class="desc">
+                    Credibly conceptualize multifunctional human capital after
+                    that awesome revenue superior scenarios. Collaboratively
+                    myocardinate flexible social marketing working technologies
+                    and robust services available
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="single-brand-box">
-                <div class="brand-thumb">
-                  <img src="assets/images/home-2/brand-3.png" alt="" />
+              <div class="faq-singular">
+                <h2 class="faq-question">How to generate organic audience?</h2>
+                <div class="faq-answer">
+                  <div class="desc">
+                    Credibly conceptualize multifunctional human capital after
+                    that awesome revenue superior scenarios. Collaboratively
+                    myocardinate flexible social marketing working technologies
+                    and robust services available
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="single-brand-box">
-                <div class="brand-thumb">
-                  <img src="assets/images/home-2/brand-4.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="single-brand-box">
-                <div class="brand-thumb">
-                  <img src="assets/images/home-2/brand-5.png" alt="" />
+              <div class="faq-singular">
+                <h2 class="faq-question">Do you have any custom services?</h2>
+                <div class="faq-answer">
+                  <div class="desc">
+                    Credibly conceptualize multifunctional human capital after
+                    that awesome revenue superior scenarios. Collaboratively
+                    myocardinate flexible social marketing working technologies
+                    and robust services available
+                  </div>
                 </div>
               </div>
             </div>
@@ -422,133 +354,20 @@
       </div>
     </div>
     <!--==================================================-->
-    <!-- End Toptech Brand Area Style Two-->
+    <!-- End Hybritech Frequently asked questions-->
     <!--==================================================-->
 
     <!--==================================================-->
-    <!-- Start Toptech Footer Area Style One-->
+    <!-- Start Hybritech Footer Area Style One-->
     <!--==================================================-->
     <div class="footer-area style-one">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-logo">
-              <a href="index.html"
-                ><img src="assets/images/logo-2.png" alt=""
-              /></a>
-            </div>
-            <div class="footer-widget-desc">
-              <p>
-                Monotonectally synergize granular top visualize strategic
-                infomediaries afters task state of the art infrastructures
-                digital agency in north
-              </p>
-            </div>
-            <div class="toptech-button inner-style">
-              <a href="#"
-                >Discover More<i class="bi bi-arrow-right-short"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="footer-widget-content">
-              <div class="footer-widget-title">
-                <h4>Company</h4>
-              </div>
-              <div class="footer-widget-menu">
-                <ul>
-                  <li>
-                    <a href="about-1.html"
-                      ><i class="bi bi-arrow-right-circle"></i>About</a
-                    >
-                  </li>
-                  <li>
-                    <a href="team.html"
-                      ><i class="bi bi-arrow-right-circle"></i>Our Team</a
-                    >
-                  </li>
-                  <li>
-                    <a href="pricing.html"
-                      ><i class="bi bi-arrow-right-circle"></i>Pricing Plan</a
-                    >
-                  </li>
-                  <li>
-                    <a href="blog-grid.html"
-                      ><i class="bi bi-arrow-right-circle"></i>Latest Blog</a
-                    >
-                  </li>
-                  <li>
-                    <a href="careers.html"
-                      ><i class="bi bi-arrow-right-circle"></i>Careers</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-widget-content">
-              <div class="footer-widget-title">
-                <h4>Our Services</h4>
-              </div>
-              <div class="footer-widget-menu">
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="bi bi-arrow-right-circle"></i>IT Solutions</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="bi bi-arrow-right-circle"></i>Cyber Security</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="bi bi-arrow-right-circle"></i>Digital
-                      Marketing</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="bi bi-arrow-right-circle"></i>Brand Identity</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="bi bi-arrow-right-circle"></i>SEO Marketing</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-widget-content">
-              <div class="footer-widget-title">
-                <h4>Newsletter</h4>
-              </div>
-              <p class="f-desc-2">Subscribe our Latest Newsletter</p>
-              <form action="#">
-                <div class="footer-newslatter-box">
-                  <input
-                    type="text"
-                    name="Email"
-                    placeholder="Enter Your E-Mail"
-                    required
-                  />
-                  <button type="submit">Subscribe</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
         <div class="row align-items-center">
           <div class="footer-bottom-area">
             <div class="row">
               <div class="col-lg-6 col-md-6">
                 <div class="footer-bottom-content">
-                  <p>© 2024 Toptech. Designed By Dream IT Solution</p>
+                  <p>Ⓒ 2024 Hybritech Innovations, Inc. All rights reserved</p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6">
@@ -564,7 +383,7 @@
                       <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -575,11 +394,11 @@
       </div>
     </div>
     <!--==================================================-->
-    <!-- End Toptech Footer Area Style One-->
+    <!-- End Hybritech Footer Area Style One-->
     <!--==================================================-->
 
     <!--==================================================-->
-    <!-- Start Toptech Scroll Up-->
+    <!-- Start Hybritech Scroll Up-->
     <!--==================================================-->
     <div class="prgoress_indicator active-progress">
       <svg
@@ -599,7 +418,7 @@
       </svg>
     </div>
     <!--==================================================-->
-    <!-- End Toptech Scroll Up-->
+    <!-- End Hybritech Scroll Up-->
     <!--==================================================-->
 
     <!-- jquery js -->
@@ -620,6 +439,7 @@
     <script src="venobox/venobox.js"></script>
     <!--  animated-text js -->
     <script src="assets/js/animated-text.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
     <!-- venobox min js -->
     <script src="venobox/venobox.min.js"></script>
     <!-- jquery meanmenu js -->
