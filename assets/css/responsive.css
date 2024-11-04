@@ -1,4 +1,5 @@
 /* Normal desktop :1400px. */
+/*====================================Start extra css=================================== */
 .navbar-toggler {
   border: 2px solid rgba(0, 0, 0, 0) !important;
 }
@@ -17,6 +18,155 @@
   outline: 0;
   box-shadow: 0 0 0 0 !important;
 }
+@media (max-width: 1430px) {
+  .style-two.hero-area {
+    height: 650px;
+  }
+
+  .style-two .hero-content h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 44px;
+    font-weight: 700;
+    font-family: "Rajdhani";
+  }
+
+  .single-services-box h3 {
+    max-width: 300px;
+    font-size: 20px;
+    padding-bottom: 20px !important;
+  }
+
+  .style-two .single-services-box {
+    padding: 20px 0 10px 25px;
+    height: 282px;
+  }
+
+  .style-two .service-content h4 {
+    font-size: 26px;
+    line-height: 26px;
+    color: #041424;
+    font-weight: 700;
+    margin: 0;
+    transition: 0.5s;
+    padding: 0px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .style-two.hero-area {
+    height: 520px;
+  }
+  .style-two .single-services-box {
+    padding: 10px 10px 10px 10px !important;
+    height: auto;
+  }
+}
+
+@media (max-width: 925px) {
+  .style-two.hero-area {
+    height: 379px;
+  }
+}
+
+@media (max-width: 769px) {
+  .style-two.hero-area {
+    height: 300px;
+  }
+  .style-two .hero-content {
+    margin-top: 80px;
+  }
+  .style-two .hero-content h1 {
+    font-size: 30px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    font-weight: 700;
+    font-family: "Rajdhani";
+  }
+
+  .style-two .hero-button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .style-two .hero-content {
+    margin-top: 0px;
+  }
+
+  .style-two .hero-content h1 {
+    font-size: 20px;
+    line-height: 15px;
+  }
+
+  .style-two .hero-content p {
+    width: 100%;
+    margin: 0px 0 0 !important;
+    font-size: 13px !important;
+  }
+
+  .style-two.hero-area {
+    height: auto;
+  }
+
+  .style-two .hero-button a {
+    margin-bottom: 4px !important;
+    padding: 3px 7px 5px 8px !important;
+  }
+  .customer-experience {
+    height: auto !important;
+  }
+  .customer-experience h1 {
+    font-size: 20px;
+    padding-top: 0px !important;
+  }
+  .customer-experience h4 {
+    font-size: 14px;
+  }
+
+  .style-two.service-area h1 {
+    font-size: 20px;
+    padding-top: 0px !important;
+  }
+  .style-two.service-area h4 {
+    font-size: 14px;
+  }
+  .style-two.counter-area h4 {
+    font-size: 40px;
+  }
+
+  .develop h1 {
+    font-size: 20px;
+    padding-top: 0px !important;
+  }
+  .develop h4 {
+    font-size: 14px;
+  }
+  .style-two.pricing-area {
+    background: var(--bg-color-one);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 36px 0 80px;
+  }
+
+  .style-two.team-area {
+    background: var(--bg-color-one);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 25px 0 91px;
+  }
+  .contact {
+    padding-top: 29px !important;
+  }
+}
+/*====================================End extra css=================================== */
+
 @media (min-width: 1400px) and (max-width: 1600px) {
   /*Home 1 Resopnsive*/
 
@@ -617,10 +767,12 @@
   .header-menu ul li {
     margin-right: 15px;
   }
-
+  .style-two .hero-content {
+    margin-top: 60px;
+  }
   .style-two .hero-content h1 {
-    font-size: 56px;
-    line-height: 56px;
+    font-size: 40px;
+    line-height: 40px;
   }
 
   .style-two .hero-thumb {
@@ -2820,8 +2972,6 @@
   }
 
   .style-one .hero-content h1 {
-    font-size: 40px;
-    line-height: 46px;
   }
 
   .style-one .hero-content p {
