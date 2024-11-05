@@ -76,6 +76,12 @@
   .style-two.hero-area {
     height: 300px;
   }
+
+  .service-icon i {
+    font-size: 50px !important;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
   .style-two .hero-content {
     margin-top: 80px;
   }
@@ -99,6 +105,11 @@
     margin-top: 0px;
   }
 
+  .service-icon i {
+    font-size: 50px !important;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
   .style-two .hero-content h1 {
     font-size: 20px;
     line-height: 15px;
