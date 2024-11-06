@@ -22,7 +22,11 @@
   .style-two.hero-area {
     height: 650px;
   }
-
+  .service-icon i {
+    font-size: 60px !important;
+    margin-top: 0px;
+    margin-right: 20px;
+  }
   .style-two .hero-content h1 {
     font-size: 40px;
     text-transform: uppercase;
@@ -76,6 +80,12 @@
   .style-two.hero-area {
     height: 300px;
   }
+
+  .service-icon i {
+    font-size: 50px !important;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
   .style-two .hero-content {
     margin-top: 80px;
   }
@@ -98,7 +108,21 @@
   .style-two .hero-content {
     margin-top: 0px;
   }
-
+  .them-toggle label {
+    position: absolute;
+    top: -12px;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .service-icon i {
+    font-size: 50px !important;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
   .style-two .hero-content h1 {
     font-size: 20px;
     line-height: 15px;

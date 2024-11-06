@@ -4,6 +4,8 @@
 :root {
   --brand-color-one: #144a4b;
   --brand-color-two: #4d8586;
+  --color-white: #ffffff;
+  --color-black: #000000;
   --vedio-bg-color: #0d232480;
   --bg-color-one: radial-gradient(
     30.95% 31.44% at 50% 64.9%,
@@ -11,14 +13,147 @@
     #0f0f0f 100%
   );
   --font-size: 16px;
+
+  --background-color: var(--color-white);
+  --text-color: var(--color-black);
 }
 
+/* Dark theme */
+.dark-theme {
+  --background-color: var(--color-black);
+  --text-color: var(--color-white);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-size);
+}
+/*---=====================================================
+   start them switch 
+=========================================================---*/
+.them-toggle {
+  position: relative;
+  left: 15px;
+}
+.them-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.them-toggle label {
+  position: absolute;
+  top: -62px;
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.them-toggle label::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--brand-color-one);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+  transition: transform 0.3s ease;
+}
+
+.them-toggle input:checked + label {
+  background-color: var(--brand-color-one);
+}
+
+.them-toggle input:checked + label::before {
+  transform: translateX(26px);
+  background-color: var(--color-white);
+}
+
+.them-toggle label:hover {
+  background-color: #999;
+}
+
+.them-toggle input:checked + label:hover {
+  background-color: var(--brand-color-one);
+}
+
+.them-toggle input:active + label {
+  background-color: var(--color-white);
+}
+
+.them-toggle input:checked:active + label {
+  background-color: var(--color-white);
+}
+
+.them-toggle input:focus + label {
+  /* box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2); */
+}
+/*---=====================================================
+   End them switch 
+=========================================================---*/
+
+/*---=====================================================
+  Start Extra custom css global
+=========================================================---*/
 .span {
   color: #4d8586;
 }
 .single-services-box h3 {
   max-width: 300px;
 }
+
+.service-icon i {
+  font-size: 60px !important;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.service-icon .html {
+  color: red !important;
+}
+.service-icon .ts {
+  position: relative;
+  top: -20px;
+  width: 43px;
+}
+.service-icon .mysql {
+  position: relative;
+  top: -20px;
+  width: 100px;
+}
+.service-icon .angular {
+  color: red !important;
+}
+.service-icon .laravel {
+  color: red !important;
+}
+.service-icon .js {
+  color: rgb(211, 214, 31) !important;
+}
+.inner-style .careers-area p {
+  color: white !important;
+}
+.job-post p {
+  /* color: rgba(255, 255, 255, 0.733) !important; */
+  margin-bottom: 0px !important;
+}
+.bold-font {
+  font-weight: 600;
+  font-size: 19px;
+}
+.color-brand {
+  color: var(--brand-color-two) !important;
+}
+.job-submit-button {
+  text-align: left !important;
+}
+
+/*---=====================================================
+   End Extra custom css global
+=========================================================---*/
 
 /* ===================Start about us page extra css=================== */
 .facality-content {
@@ -118,12 +253,14 @@
 .customer-experience {
   position: relative;
   height: 400px !important;
+  background: var(--bg-color-one);
 }
 
 .customer-experience .video-background {
   width: 100%;
   position: absolute;
   z-index: -1;
+  background: var(--bg-color-one);
 }
 /* ===================End home page extra css =================== */
 
@@ -988,7 +1125,6 @@
 
 .faq-singular {
   position: relative;
-  background: #cedef7;
   margin-bottom: 20px;
 }
 
@@ -1002,7 +1138,6 @@
   border-radius: 5px;
   z-index: 2;
   transition: 0.5s;
-  background: #cedef7;
   font-family: "Nunito", sans-serif;
 }
 
@@ -2124,7 +2259,7 @@
   padding: 20px;
   font-weight: 700;
   margin: auto;
-  max-width: 600px;
+  max-width: 800px !important;
 }
 
 .style-two.section-title h1 {
@@ -2229,11 +2364,12 @@
 
 .style-two .service-content h4 {
   font-size: 26px;
-  line-height: 50px;
+  line-height: 27px;
   color: #041424;
   font-weight: 700;
-  margin: 16px 0 12px 0;
+  margin: 2px 8px 16px 2px;
   transition: 0.5s;
+  padding: 0px !important;
 }
 
 .style-two .single-services-box:hover .service-content h4,
@@ -2269,11 +2405,10 @@
   display: inline-block;
   color: #0b59db;
   font-size: 22px;
-  transition: 0.5s;
 }
 
 .style-two .single-services-box:hover .service-content i {
-  left: 7px;
+  left: 0px;
   position: relative;
 }
 
@@ -4966,19 +5101,17 @@
   border-radius: 5px;
   z-index: 2;
   transition: 0.5s;
-  background: #fff;
   font-family: "Nunito", sans-serif;
 }
 
 .inner-style .faq-singular {
   position: relative;
-  background: #fff;
   margin-bottom: 20px;
 }
 
 .inner-style .faq-singular.active .faq-question {
   border-bottom: 1px solid #2222;
-  background: #0b59db !important;
+  background: #0b57db00 !important;
   color: #fff;
 }
 
