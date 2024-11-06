@@ -71,12 +71,22 @@
 }
 
 @media (max-width: 925px) {
+  .them-toggle {
+    position: relative;
+    left: 15px;
+    top: 50px;
+  }
   .style-two.hero-area {
     height: 379px;
   }
 }
 
 @media (max-width: 769px) {
+  .them-toggle {
+    position: relative;
+    left: 15px;
+    top: 50px;
+  }
   .style-two.hero-area {
     height: 300px;
   }
@@ -105,19 +115,16 @@
 }
 
 @media (max-width: 450px) {
+  .them-toggle {
+    position: relative;
+    left: 15px;
+    top: 50px;
+  }
+
   .style-two .hero-content {
     margin-top: 0px;
   }
-  .them-toggle label {
-    position: absolute;
-    top: -12px;
-    width: 50px;
-    height: 25px;
-    background-color: #ccc;
-    border-radius: 17px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+
   .service-icon i {
     font-size: 50px !important;
     margin-top: 30px;

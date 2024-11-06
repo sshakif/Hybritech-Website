@@ -3,6 +3,27 @@
 =========================================================---*/
 :root {
   --brand-color-one: #144a4b;
+  --card-color: #ffffff;
+  --card-hover-color: #144a4b;
+  --card-hover-text-color: #ffffff;
+  --brand-color-two: #4d8586;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --vedio-bg-color: #0d232480;
+  --bg-color-one: rgb(255, 255, 255);
+  --font-size: 16px;
+  --display: none;
+  --display1: block;
+  --background-color: var(--color-white);
+  --text-color: var(--color-black);
+  --text-second: rgb(53, 53, 53);
+  --text-color-second: rgb(53, 53, 53);
+  --theme-chnage: 3px !important;
+}
+
+/* Dark theme */
+.dark-theme {
+  --brand-color-one: #144a4b;
   --brand-color-two: #4d8586;
   --color-white: #ffffff;
   --color-black: #000000;
@@ -12,16 +33,16 @@
     #142d2e 0%,
     #0f0f0f 100%
   );
-  --font-size: 16px;
-
-  --background-color: var(--color-white);
-  --text-color: var(--color-black);
-}
-
-/* Dark theme */
-.dark-theme {
-  --background-color: var(--color-black);
+  --display: block;
+  --display1: none;
+  --card-color: #144a4b;
+  --card-hover-color: #ffffff;
+  --card-hover-text-color: #000000;
+  --theme-chnage: 25px !important;
+  --text-second: rgb(226, 226, 226);
+  --background-color: var(--bg-color-one);
   --text-color: var(--color-white);
+  --text-color-second: var(--color-white);
 }
 
 body {
@@ -32,6 +53,12 @@ body {
 /*---=====================================================
    start them switch 
 =========================================================---*/
+.black-theme {
+  display: var(--display);
+}
+.white-theme {
+  display: var(--display1);
+}
 .them-toggle {
   position: relative;
   left: 15px;
@@ -55,7 +82,7 @@ body {
   content: "";
   position: absolute;
   top: 3px;
-  left: 3px;
+  left: var(--theme-chnage);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -69,7 +96,7 @@ body {
 }
 
 .them-toggle input:checked + label::before {
-  transform: translateX(26px);
+  transform: translateX(2px);
   background-color: var(--color-white);
 }
 
@@ -234,14 +261,18 @@ body {
 /* ===================End service page extra css =================== */
 
 /* ===================Start home page extra css =================== */
-.develop {
-  background: radial-gradient(
-    51.8% 229.45% at 100% 0%,
-    #142d2e 0%,
-    #0f0f0f 100%
-  );
+.home-banner h1 {
+  color: white !important ;
 }
-
+.develop {
+  background: var(--bg-color-one) !important;
+}
+.develop h1 {
+  color: var(--text-color) !important;
+}
+.develop h4 {
+  color: var(--text-color-second) !important;
+}
 .industries {
   position: relative;
   overflow: hidden;
@@ -282,7 +313,7 @@ body {
 .customer-experience {
   position: relative;
   height: 400px !important;
-  background: var(--bg-color-one);
+  background: var(--bg-color-one) !important;
 }
 
 .customer-experience .video-background {
@@ -1920,7 +1951,7 @@ body {
    <!--Hybritech hero Area Home Two All Css-->
 =========================================================---*/
 .style-two.hero-area {
-  background: url(../vedio/vedio_1.mp4) no-repeat;
+  background: url() no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1931,7 +1962,12 @@ body {
 
   /* background: var(--bg-color-one); */
 }
-
+.style-two.hero-area h1 {
+  color: var(--text-color);
+}
+.style-two.hero-area h4 {
+  color: var(--text-second) !important;
+}
 .style-two .hero-content h4 {
   margin: 0 0 3px;
   font-size: 19px;
@@ -1976,6 +2012,7 @@ body {
   font-size: 16px;
   font-family: "Nunito", sans-serif;
   margin-right: 17px;
+  opacity: 0.8;
   transition: 0.5s;
 }
 
@@ -2313,19 +2350,37 @@ body {
   background-position: center center;
   padding: 50px 0 50px;
 }
-
+.style-two.service-area h1 {
+  color: var(--text-color) !important;
+}
+.style-two.service-area h4 {
+  color: var(--text-color) !important;
+}
 .style-two.service-area .section-title h1 {
   color: #fff;
 }
+.style-two .single-services-box h4 {
+  color: var(--text-color) !important;
+}
+.style-two .single-services-box p {
+  color: var(--text-color) !important;
+}
 
+.style-two .single-services-box:hover p {
+  color: var(--card-hover-text-color) !important;
+}
+.style-two .single-services-box:hover h4 {
+  color: var(--card-hover-text-color) !important;
+}
 .style-two .single-services-box {
   padding: 37px 0 30px 40px;
-  background-color: #fff;
+  background-color: var(--card-color);
   position: relative;
   z-index: 1;
   margin-bottom: 25px;
   border-radius: 5px;
   height: 370px;
+  border: 1px solid #1a1a1a71 !important;
 }
 
 .style-two .single-services-box:before {
@@ -2335,7 +2390,7 @@ body {
   top: 0;
   width: 0;
   height: 100%;
-  background: var(--brand-color-one);
+  background: var(--card-hover-color);
   transition: 0.5s;
   z-index: -1;
   border-radius: 5px;
@@ -2362,7 +2417,12 @@ body {
   z-index: -1;
   border-radius: 100%;
 }
-
+.style-two .single-services-box:hover h4 {
+  color: #000000 !important;
+}
+.style-two .single-services-box:hover p {
+  color: #000000 !important;
+}
 .style-two .single-services-box:hover .service-icon-thumb:before {
   background: #2f73e0;
 }
@@ -2992,14 +3052,22 @@ body {
   background-size: cover;
   padding: 139px 0 80px;
 }
-
+.style-two.pricing-area h1 {
+  color: var(--text-color) !important;
+}
+.style-two.pricing-area h4 {
+  color: var(--text-color-second) !important;
+}
+.style-two.pricing-area h2 {
+  color: var(--text-color-second) !important;
+}
 .style-two.pricing-area .section-title h1 {
   color: #fff;
 }
 
 .style-two .faq-singular.active .faq-question {
   background: var(--brand-color-one);
-  color: #ffff;
+  color: #ffff !important;
   padding: 17px 20px 17px 32px;
 }
 
@@ -3030,7 +3098,7 @@ body {
   padding: 27px 25px 25px 0;
   opacity: 0.502;
   font-size: 16px;
-  color: #ffffff;
+  color: var(--text-color-second) !important;
   font-weight: 400;
   font-family: "Nunito";
 }
@@ -3044,7 +3112,7 @@ body {
   font-size: 30px;
   font-weight: 400;
   transition: 0.5s;
-  color: #ffff;
+  color: var(--text-color) !important;
 }
 
 .style-two .faq-singular.active .faq-question:before {
@@ -4131,11 +4199,11 @@ body {
   outline: 0;
   margin-bottom: 27px;
   background: transparent;
-  color: white;
+  color: var(--text-color) !important;
 }
 
 .style-three .single-input-box input::placeholder {
-  color: #ffffff;
+  color: var(--text-color) !important;
   font-weight: 300;
   font-family: "Nunito";
 }
@@ -4159,7 +4227,7 @@ body {
   outline: 0;
   margin-bottom: 27px;
   background: transparent;
-  color: white;
+  color: var(--text-color) !important;
 }
 
 .style-three .single-input-box textarea::placeholder {
@@ -6269,13 +6337,13 @@ button.icons {
 }
 
 .inner-style .careers-content h4 {
-  color: #e6e6e6;
+  color: var(--text-color);
   font-size: 24px;
   /* margin: 0; */
   font-weight: 600;
 }
 .inner-style .careers-content h1 {
-  color: #e6e6e6;
+  color: var(--text-color);
 }
 
 .inner-style .careers-content a {
@@ -6320,7 +6388,7 @@ button.icons {
 
 .inner-style .job-item-content h4 {
   font-size: 26px;
-  color: #cecece;
+  color: var(--text-color);
   font-weight: 600;
   font-family: "Rajdhani";
   margin: 19px 0 0;

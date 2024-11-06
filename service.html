@@ -150,6 +150,15 @@
               <div class="header-button">
                 <a href="contact.html">Contact us</a>
               </div>
+              
+              <div class="them-toggle ms-3">
+                <input id="toggle-switch" type="checkbox">
+                <label for="toggle-switch"></label>
+              </div>
+           
+
+
+            </div>  
             </div>
           </div>
         </div>
@@ -162,11 +171,17 @@
     <!--==================================================-->
     <!-- Start Main Menu Area -->
     <!--==================================================-->
+
     <nav class="navbar navbar-expand-lg d-sm-block d-md-block d-lg-none">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets/images/home-1/Logo.png" alt=""
         /></a>
+
+        <div class="them-toggle ms-3">
+          <input id="toggle-switch" type="checkbox">
+          <label for="toggle-switch"></label>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -185,8 +200,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link active" href="service.html">Service</a>
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="service.html">Service</a>
             <a class="nav-link" href="about.html">About us</a>
             <a class="nav-link" href="careers.html">Career</a>
             <a class="nav-link" href="contact.html">Contact us</a>
@@ -765,11 +782,10 @@
         <div class="row">
           <div class="col-md-6 d-flex align-items-center align-items-center">
             <div class="center style-two">
-              <h1 style="padding: 20px">Have a Project Idea?</h1>
+              <h1 style="padding: 20px">Let’s Build the Future Together!</h1>
               <h1></h1>
               <h4>
-                Highly Personalize new business connection, expertly curated to
-                meet your objectives and drive your business forward
+             Have a project in mind? Contact us today to schedule a free consultation! We’re excited to bring your ideas to life.
               </h4>
             </div>
           </div>
@@ -932,6 +948,32 @@
     <!-- End Hybritech Scroll Up-->
     <!--==================================================-->
 
+
+    <script>
+      // Get the toggle switch
+      const toggleSwitch = document.getElementById('toggle-switch');
+    
+      // Check for saved theme in localStorage (if available)
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark-theme');
+        toggleSwitch.checked = true; // If dark theme is saved, check the box
+
+        console.log('dark them');
+      }
+    
+      // Listen for changes to the checkbox
+      toggleSwitch.addEventListener('change', function() {
+        if (toggleSwitch.checked) {
+          document.documentElement.classList.add('dark-theme');
+          localStorage.setItem('theme', 'dark'); // Save the dark theme preference
+          console.log('dark them');
+        } else {
+          document.documentElement.classList.remove('dark-theme');
+          localStorage.setItem('theme', 'light'); // Save the light theme preference
+          console.log('light them');
+        }
+      });
+    </script>
     <!-- jquery js -->
     <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
     <!-- bootstrap js -->
