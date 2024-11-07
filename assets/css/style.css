@@ -5,12 +5,12 @@
   --brand-color-one: #144a4b;
   --card-color: #ffffff;
   --card-hover-color: #144a4b;
-  --card-hover-text-color: #ffffff;
+  --card-hover-text-color: #ffffff !important;
   --brand-color-two: #4d8586;
   --color-white: #ffffff;
   --color-black: #000000;
   --vedio-bg-color: #0d232480;
-  --bg-color-one: rgb(255, 255, 255);
+  --bg-color-one: rgb(241, 243, 243);
   --font-size: 16px;
   --display: none;
   --display1: block;
@@ -37,7 +37,7 @@
   --display1: none;
   --card-color: #144a4b;
   --card-hover-color: #ffffff;
-  --card-hover-text-color: #000000;
+  --card-hover-text-color: #000000 !important;
   --theme-chnage: 25px !important;
   --text-second: rgb(226, 226, 226);
   --background-color: var(--bg-color-one);
@@ -224,6 +224,16 @@ body {
   transition: 0.4s;
   border-left: 4px solid var(--brand-color-one);
   background-color: var(--brand-color-one);
+  color: #ffffff !important;
+}
+
+.facality-content:hover h4 {
+  color: white !important;
+  transition: 0.4s;
+}
+.facality-content:hover p {
+  color: white !important;
+  transition: 0.4s;
 }
 .facality-content h4 {
   color: white;
@@ -2354,7 +2364,7 @@ body {
   color: var(--text-color) !important;
 }
 .style-two.service-area h4 {
-  color: var(--text-color) !important;
+  color: var(--text-color);
 }
 .style-two.service-area .section-title h1 {
   color: #fff;
@@ -2369,6 +2379,7 @@ body {
 .style-two .single-services-box:hover p {
   color: var(--card-hover-text-color) !important;
 }
+
 .style-two .single-services-box:hover h4 {
   color: var(--card-hover-text-color) !important;
 }
@@ -2417,12 +2428,7 @@ body {
   z-index: -1;
   border-radius: 100%;
 }
-.style-two .single-services-box:hover h4 {
-  color: #000000 !important;
-}
-.style-two .single-services-box:hover p {
-  color: #000000 !important;
-}
+
 .style-two .single-services-box:hover .service-icon-thumb:before {
   background: #2f73e0;
 }
@@ -4231,7 +4237,7 @@ body {
 }
 
 .style-three .single-input-box textarea::placeholder {
-  color: #ffffff;
+  color: var(--text-color) !important;
   font-weight: 300;
   font-family: "Nunito";
 }

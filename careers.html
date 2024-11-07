@@ -703,7 +703,7 @@
           <div class="col-lg-6 text-center">
             <div class="single-contact-box">
               <div class="contact-contetn"></div>
-              <form action="#">
+              <form action="process_form.php" method="POST">
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="single-input-box">
@@ -719,7 +719,7 @@
                     <div class="single-input-box">
                       <input
                         type="text"
-                        name="Email"
+                        name="project_name"
                         placeholder="Project Name"
                         required=""
                       />
@@ -728,8 +728,8 @@
                   <div class="col-lg-6">
                     <div class="single-input-box">
                       <input
-                        type="text"
-                        name="Phone"
+                        type="email"
+                        name="email"
                         placeholder="Email *"
                         required=""
                       />
@@ -739,7 +739,7 @@
                     <div class="single-input-box">
                       <input
                         type="text"
-                        name="Phone"
+                        name="project_type"
                         placeholder="Project Type"
                         required=""
                       />
@@ -749,7 +749,7 @@
                     <div class="single-input-box">
                       <input
                         type="text"
-                        name="Phone"
+                        name="project_budget"
                         placeholder="Project Budget"
                         required=""
                       />
@@ -759,16 +759,15 @@
                   <div class="col-lg-12">
                     <div class="single-input-box">
                       <textarea
-                        name="massage"
-                        id="massage"
-                        placeholder="Write Massage"
+                        name="message"
+                        placeholder="Write Message"
                         required=""
                       ></textarea>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="massage-sent-button">
-                      <button type="submit" class="submit">Send Massage</button>
+                      <button type="submit" class="submit">Send Message</button>
                     </div>
                   </div>
                 </div>

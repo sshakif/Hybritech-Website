@@ -5,10 +5,9 @@ use PHPMailer\PHPMailer\Exception;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name = htmlspecialchars($_POST['name']);
-    $project_name = htmlspecialchars($_POST['project_name']);
+    $number = htmlspecialchars($_POST['number']);
     $email = htmlspecialchars($_POST['email']);
-    $project_type = htmlspecialchars($_POST['project_type']);
-    $project_budget = htmlspecialchars($_POST['project_budget']);
+    $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
     require_once './vendor/autoload.php'; 
     $mail = new PHPMailer(true); 
@@ -23,22 +22,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Password = 'gizflulxmzwywrpd';  
         $mail->setFrom($email, $name);  
         $mail->addAddress('info@hybri.tech', 'Recipient Name'); 
-        $mail->Subject = 'Thanks for your Project Inquiry!';
+        $mail->Subject = $subject;
         $mail->isHTML(true);
         $mail->Body = "
             <html>
             <body>
-            <h2>Project Inquiry Details</h2>
             <p><strong>Full Name:</strong> $name</p>
-            <p><strong>Project Name:</strong> $project_name</p>
+            <p><strong>Contact Number:</strong> $number</p>
             <p><strong>Email:</strong> $email</p>
-            <p><strong>Project Type:</strong> $project_type</p>
-            <p><strong>Project Budget:</strong> $project_budget</p>
             <p><strong>Message:</strong><br>$message</p>
             </body>
             </html>";
-        $mail->AltBody = 'Project Inquiry Details: ' . $message;
+        $mail->AltBody = 'Contact Details: ' . $message;
         if ($mail->send()) {
+            // echo $mail->AltBody;
             echo '<script type="text/javascript"> alert("Message has been sent"); window.history.back(); </script>';
             // header("Location: index.html");
             exit;
