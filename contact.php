@@ -21,7 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Password = 'gizflulxmzwywrpd';  
         $mail->setFrom($email, $name);  
-        $mail->addAddress('info@hybri.tech', 'Recipient Name'); 
+        $mail->addAddress('info@hybri.tech', 'Recipient Name');
+        $mail->addReplyTo($email, $name);
         $mail->Subject = $subject;
         $mail->isHTML(true);
         $mail->Body = "
@@ -36,8 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->AltBody = 'Contact Details: ' . $message;
         if ($mail->send()) {
             // echo $mail->AltBody;
-            echo '<script type="text/javascript"> alert("Message has been sent"); window.history.back(); </script>';
-            // header("Location: index.html");
+//            echo '<script type="text/javascript"> alert("Message has been sent"); window.history.back(); </script>';
+             header("Location: contact.html");
             exit;
         } else {
             // echo 'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo;
