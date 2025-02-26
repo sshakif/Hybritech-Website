@@ -68,6 +68,9 @@
     padding: 10px 10px 10px 10px !important;
     height: auto;
   }
+  .map {
+    height: 45vh;
+  }
 }
 
 @media (max-width: 925px) {
@@ -111,6 +114,9 @@
 
   .style-two .hero-button {
     margin-top: 10px;
+  }
+  .map {
+    height: 40vh; 
   }
 }
 
@@ -3907,6 +3913,9 @@
 
 /* Mobile Devices :320px. */
 @media (min-width: 320px) and (max-width: 479px) {
+  .map {
+    height: 35vh;
+  }
   /*Home 1 Resopnsive*/
   .top-header-area {
     display: none;
